@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dry_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:openDrawer="start"
+    tools:context="com.example.ola.dryclean.Activites.DryListActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_dry_list"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:background="@color/white"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="3dp"/>
+
+</RelativeLayout>

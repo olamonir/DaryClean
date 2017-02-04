@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.ola.dryclean.Fragments.MainFragment">
+
+
+
+    <!--<android.support.v7.widget.Toolbar-->
+    <!--android:id="@+id/toolbar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:background="?attr/colorPrimary"-->
+    <!--app:titleTextColor="@color/colorPrimary"-->
+    <!--app:popupTheme="@style/AppTheme.NoActionBar"/>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/person_img"
+            android:id="@+id/imageView" />
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:src="@drawable/lifecycle"/>-->
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="هل تريد غسيل ملابسك؟"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/text1"
+        android:textColor="@color/cast_intro_overlay_background_color"
+        android:textSize="25dp"
+        android:layout_marginBottom="20dp"/>
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:gravity="right"
+        android:layout_gravity="center"
+        android:layoutDirection="ltr"
+
+        android:background="#E6E7E8"
+        android:weightSum="5"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:background="#E6E7E8"
+
+            android:id="@+id/location_txt"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:text="السالمية"
+            android:layout_weight="3.76" />
+
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/location_butn"
+            android:layout_gravity="center"
+            android:background="@drawable/imageviewmap"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:layoutDirection="rtl" />
+
+
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:id="@+id/menu_btn"
+        android:text="قائمة المصابغ"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"/>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal">
+
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="10dp"-->
+        <!--android:id="@+id/log_btn"-->
+        <!--android:text="تسجيل الدخول"-->
+        <!--android:textSize="20dp"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:textColor="@color/colorPrimary"-->
+        <!--android:background="@color/gray"/>-->
+    </LinearLayout>
+
+</LinearLayout>

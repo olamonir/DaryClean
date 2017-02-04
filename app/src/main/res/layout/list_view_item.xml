@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/clickContainer"
+    android:layoutDirection="rtl"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/news_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/splash" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_marginLeft="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+
+                <TextView
+                    android:id="@+id/text_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lines="2"
+                    android:gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:textAlignment="gravity"
+                    android:textDirection="anyRtl"
+                    android:text="اسم المصبغة"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:layout_weight="4" />
+
+                <TextView
+                    android:id="@+id/text_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="5dp"
+                    android:lines="2"
+                    android:layout_marginTop="8dp"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:textDirection="anyRtl"
+                    android:text="مغلق"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="15dp"
+                    android:layout_weight="0.79" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right">
+
+                <RatingBar
+                    android:id="@+id/myRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="2.3"
+                    android:isIndicator="false"
+                    android:stepSize="0.5"
+                    style="@android:style/Widget.Holo.Light.RatingBar.Small"
+                    android:layout_gravity="right"
+                    android:layoutDirection="rtl" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.62">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="24"
+                            android:id="@+id/delivery_time"
+                            android:textSize="20dp"
+                            android:textColor="@android:color/black"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ساعة"
+                            android:textSize="15dp"
+
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:id="@+id/timedeliver"
+                        android:text="وقت التوصيل"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="400"
+                            android:id="@+id/delivertime"
+                            android:layout_marginLeft="5dp"
+
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="فلس"
+                            android:textSize="15dp"
+
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:id="@+id/moneydeliver"
+                        android:text="رسوم التوصيل"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1.5"
+                            android:id="@+id/leastmoneyorder"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@android:color/black"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="دينار"
+                            android:textSize="15dp"
+
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:id="@+id/leastorder"
+                        android:text="أقل طلب"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/gray"
+        />
+
+
+
+</LinearLayout>

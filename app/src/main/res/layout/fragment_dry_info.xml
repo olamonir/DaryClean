@@ -1,0 +1,383 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:background="@color/white"
+    tools:context="com.example.ola.dryclean.Fragments.DryInfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:weightSum="3">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/share"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:src="@drawable/share"
+            android:scaleType="fitXY"
+            android:layout_weight="1"
+            android:onClick="shareArticle" />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/like"
+            android:src="@drawable/like"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/comment"
+            android:background="@color/white"
+            android:src="@drawable/comment"
+            android:scaleType="fitXY"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layoutDirection="rtl"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:weightSum="8">
+            <TextView
+                android:id="@+id/provincesstatic"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:text="المحافظة"
+                android:textSize="20dp"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:id="@+id/provinces"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"/>
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:weightSum="8">
+            <TextView
+                android:id="@+id/manteqastatic"
+
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:text="المنطقه"
+                android:textSize="20dp"
+                android:layout_weight="3"/>
+            <TextView
+                android:id="@+id/manteqa"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:weightSum="8">
+            <TextView
+                android:id="@+id/qat3astatic"
+
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:text="قطعة"
+                android:textSize="20dp"
+                android:layout_weight="3"
+                />
+            <TextView
+                android:id="@+id/qat3a"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"/>
+
+
+
+        </LinearLayout>
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:weightSum="8">
+            <TextView
+                android:id="@+id/statusstatic"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:text="الحالة"
+                android:textSize="20dp"
+                android:layout_weight="3"/>
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"/>
+
+
+        </LinearLayout>
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:weightSum="8">
+            <TextView
+                android:id="@+id/servicetypestatic"
+
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:text="نوع الخدمة"
+                android:textSize="20dp"
+                android:layout_weight="3"/>
+            <TextView
+                android:id="@+id/servicetype"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"/>
+
+
+        </LinearLayout>
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <TextView
+                android:id="@+id/workinghoursstatic"
+
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text="ساعات العمل"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:textSize="20dp"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:id="@+id/workinghours"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"/>
+
+
+        </LinearLayout>
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:weightSum="8">
+            <TextView
+                android:id="@+id/deliverystatic"
+
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text="التوصيل"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:textSize="20dp"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:id="@+id/delivery"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"/>
+
+        </LinearLayout>
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:weightSum="8">
+            <TextView
+                android:id="@+id/leaststatic"
+
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text="الحد الأدنى للطلب"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:textSize="20dp"
+                android:layout_weight="3"/>
+            <TextView
+                android:id="@+id/least"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"/>
+
+
+        </LinearLayout>
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:weightSum="8">
+            <TextView
+                android:id="@+id/deliverycoststatic"
+
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text="رسوم التوصيل"
+                android:textSize="20dp"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_weight="3"/>
+            <TextView
+                android:id="@+id/deliverycost"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"/>
+
+
+        </LinearLayout>
+
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="8">-->
+            <!--<TextView-->
+                <!--android:id="@+id/paymentstatic"-->
+
+                <!--android:layout_width="10dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="الدفع"-->
+                <!--android:textSize="20dp"-->
+                <!--android:layout_weight="3"-->
+
+                <!--android:layout_marginEnd="@dimen/activity_horizontal_margin"-->
+                <!--android:layout_marginRight="@dimen/activity_horizontal_margin" />-->
+            <!--<TextView-->
+                <!--android:id="@+id/payment"-->
+
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="5"/>-->
+
+
+        <!--</LinearLayout>-->
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"/>
+
+
+
+
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/info_list_view"-->
+            <!--android:layout_gravity="start"-->
+            <!--android:choiceMode="singleChoice"-->
+            <!--android:divider="@color/gray"-->
+            <!--android:dividerHeight="3dp"/>-->
+
+
+    </LinearLayout>
+
+</LinearLayout>

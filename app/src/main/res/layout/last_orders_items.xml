@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="170dp">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_margin="10dp"
+                        android:id="@+id/news_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/splash" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_vertical"
+                        android:weightSum="5">
+
+
+                        <TextView
+                            android:id="@+id/text_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:lines="2"
+                            android:gravity="right"
+                            android:layout_alignParentRight="true"
+                            android:textAlignment="gravity"
+                            android:textDirection="anyRtl"
+                            android:text="اسم المصبغة"
+                            android:textColor="@android:color/black"
+                            android:textSize="20dp"
+                            android:layout_weight="4" />
+
+                        <TextView
+                            android:id="@+id/text_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_alignParentLeft="true"
+                            android:paddingLeft="5dp"
+                            android:lines="2"
+                            android:layout_marginTop="10dp"
+                            android:gravity="left"
+
+                            android:textAlignment="gravity"
+                            android:textDirection="anyRtl"
+                            android:text="تم التسليم"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/activity_horizontal_margin"
+                            android:layout_weight="0.79" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal"
+                        android:gravity="right"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/day"
+                            android:layout_weight="1"
+                            android:text="السبت"
+                            android:textSize="25dp"
+                            android:layout_marginLeft="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/date"
+                            android:layout_weight="1"
+                            android:textSize="25dp"
+                            android:text="1/1/2017"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:weightSum="2"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MA1233"
+                            android:textSize="25dp"
+                            android:layout_marginLeft="40dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ordercost"
+                            android:text="12.500"
+                            android:textSize="25dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dinar"
+                            android:text="دينار"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+                <android.support.v7.widget.AppCompatSeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <android.support.v7.widget.AppCompatSeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <android.support.v7.widget.AppCompatSeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>
