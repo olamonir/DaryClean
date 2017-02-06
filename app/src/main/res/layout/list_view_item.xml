@@ -9,10 +9,11 @@
     android:layout_height="wrap_content">
 
 
+
     <LinearLayout
         android:id="@+id/linear"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -101,6 +102,7 @@
                 android:layout_height="wrap_content"
                 android:weightSum="3"
                 android:layout_marginTop="10dp"
+                android:paddingBottom="5dp"
                 android:orientation="horizontal"
                 android:layout_weight="0.62">
 
@@ -128,6 +130,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:id="@+id/hours"
                             android:text="ساعة"
                             android:textSize="15dp"
 
@@ -160,11 +163,13 @@
                             android:text="400"
                             android:id="@+id/delivertime"
                             android:layout_marginLeft="5dp"
-
+                            android:textColor="@android:color/black"
+                            android:textSize="20dp"
                             android:layout_weight="1"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:id="@+id/fils"
                             android:text="فلس"
                             android:textSize="15dp"
 
@@ -201,6 +206,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:id="@+id/dinaar"
                             android:text="دينار"
                             android:textSize="15dp"
 
@@ -223,12 +229,11 @@
 
 
     </LinearLayout>
-
     <View
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:background="@color/gray"
-        />
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:background="@color/gray"
+    />
 
 
 

@@ -40,6 +40,10 @@ public class DryDetailsActivity extends AppCompatActivity implements ResponseHan
     TextView deliveryTimeStatic;
     TextView deliverymoneyStatic;
     TextView leastdeliverymoneyStatic;
+
+    TextView hours;
+    TextView fils;
+    TextView dinar;
     public static  int x ;
 
     @Override
@@ -79,10 +83,12 @@ public class DryDetailsActivity extends AppCompatActivity implements ResponseHan
         deliverymoneyStatic = (TextView) findViewById(R.id.deliverymoneyStaticm);
         leastdeliverymoneyStatic = (TextView) findViewById(R.id.leastdeliverymoneyStaticm);
 
+        hours = (TextView) findViewById(R.id.hours);
+        fils = (TextView) findViewById(R.id.fils);
+        dinar = (TextView) findViewById(R.id.dinaar);
+
 //        lundryName.setTypeface(geDinarTwoLight, Typeface.BOLD);
 //        deliveryTimeStatic.setTypeface(diwanMuna, Typeface.BOLD);
-        deliverymoneyStatic.setTypeface(diwanMuna, Typeface.BOLD);
-        leastdeliverymoneyStatic.setTypeface(diwanMuna, Typeface.BOLD);
 
 
         if (getIntent().hasExtra(DryDetailsActivity.ARG_POST_ID)) {
@@ -153,6 +159,14 @@ public class DryDetailsActivity extends AppCompatActivity implements ResponseHan
 
                                     lundryName.setTypeface(geDinarTwoLight);
                                         lundryHint.setTypeface(diwanMuna);
+                                    deliverymoneyStatic.setTypeface(geDinarTwoLight);
+                                    leastdeliverymoneyStatic.setTypeface(geDinarTwoLight);
+                                    deliveryTimeStatic.setTypeface(geDinarTwoLight);
+
+                                    hours.setTypeface(geDinarTwoLight);
+                                    fils.setTypeface(geDinarTwoLight);
+                                    dinar.setTypeface(geDinarTwoLight);
+
 
 
 //                                    }

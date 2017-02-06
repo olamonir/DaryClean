@@ -59,32 +59,37 @@ public class RcyclerViewAdapterDryList extends RecyclerView.Adapter<RcyclerViewA
         holder.tvTitle.setText(String.valueOf(data.get(position).getTitleAr()));
         holder.tvTitle.setTypeface(geDinarTwoLight);
 
-        holder.status.setText(String.valueOf(data.get(position).getStatusAr()));
-        holder.status.setTypeface(diwanMuna);
+        holder.status.setText(String.valueOf(data.get(position).getStatus_ar()));
+        holder.status.setTypeface(geDinarTwoLight);
 
-        holder.leastorder.setTypeface(diwanMuna);
-        holder.moneydeliver.setTypeface(diwanMuna);
-        holder.timedeliver.setTypeface(diwanMuna);
+        holder.leastorder.setTypeface(geDinarTwoLight);
+        holder.moneydeliver.setTypeface(geDinarTwoLight);
+        holder.timedeliver.setTypeface(geDinarTwoLight);
+        holder.hours.setTypeface(geDinarTwoLight);
+        holder.fils.setTypeface(geDinarTwoLight);
+        holder.dinaar.setTypeface(geDinarTwoLight);
 
         holder.delivertm.setText(String.valueOf(data.get(position).getDelivery_time()));
         holder.delivermoney.setText(String.valueOf( data.get(position).getDelivery_cost()));
         holder.least.setText(String.valueOf(data.get(position).getMinimum_charges()));
-        holder.ratingBar.setOnRatingBarChangeListener(onRatingChangedListener(position));
+        if (data.get(position).getAvg_rating().size() > 0){
+            holder.ratingBar.setRating(Float.parseFloat(data.get(position).getAvg_rating().get(position).getAggregate()));
+        }
 
 
 
     }
-    private RatingBar.OnRatingBarChangeListener onRatingChangedListener(final int position) {
-        return new RatingBar.OnRatingBarChangeListener() {
-            @Override
-            public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
-//                DryListActivity item = getItem(position);
-//                assert item != null;
-//                item.setRatingStar(v);
-//                Log.i("Adapter", "star: " + v);
-            }
-        };
-    }
+//    private RatingBar.OnRatingBarChangeListener onRatingChangedListener(final int position) {
+//        return new RatingBar.OnRatingBarChangeListener() {
+//            @Override
+//            public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
+////                DryListActivity item = getItem(position);
+////                assert item != null;
+////                item.setRatingStar(v);
+////                Log.i("Adapter", "star: " + v);
+//            }
+//        };
+//    }
 
     @Override
     public int getItemCount() {
@@ -128,7 +133,7 @@ public class RcyclerViewAdapterDryList extends RecyclerView.Adapter<RcyclerViewA
 //    }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView tvTitle, status, delivertm ,delivermoney ,least,leastorder,moneydeliver,timedeliver;
+        public TextView tvTitle, status, delivertm ,delivermoney ,least,leastorder,moneydeliver,timedeliver , hours , fils , dinaar;
         public ImageView newsImage ;
         public RatingBar ratingBar ;
         public RelativeLayout container ;
@@ -145,6 +150,10 @@ public class RcyclerViewAdapterDryList extends RecyclerView.Adapter<RcyclerViewA
             leastorder = (TextView) view.findViewById(R.id.leastorder);
             moneydeliver = (TextView) view.findViewById(R.id.moneydeliver);
             timedeliver = (TextView) view.findViewById(R.id.timedeliver);
+            hours = (TextView) view.findViewById(R.id.hours);
+            fils = (TextView) view.findViewById(R.id.fils);
+            dinaar = (TextView) view.findViewById(R.id.dinaar);
+
 //            container =(RelativeLayout) view.findViewById(R.id.clickContainer);
 //            view.setOnClickListener(this);
 

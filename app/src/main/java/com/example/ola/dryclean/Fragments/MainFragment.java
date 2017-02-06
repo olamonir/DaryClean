@@ -31,7 +31,8 @@ public class MainFragment extends Fragment {
     TextView loctxt;
     Button menubutn;
     Button logbutn;
-    Button places ;
+    TextView places ;
+    Typeface geDinarTwoLight ;
 
 
     public MainFragment() {
@@ -46,11 +47,13 @@ public class MainFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootview =inflater.inflate(R.layout.fragment_main, container, false);
 
-//        diwanMuna = Typeface.createFromAsset(container, "fonts/DiwanMuna.ttf");
+        diwanMuna = Typeface.createFromAsset(getActivity().getAssets() ,"fonts/DiwanMuna.ttf");
+        geDinarTwoLight = Typeface.createFromAsset(getActivity().getAssets(), "fonts/ge-dtwol.otf");
 
-        places= (Button) rootview.findViewById(R.id.location_txt) ;
         textView = (TextView) rootview.findViewById(R.id.text1);
-        textView.setTypeface(diwanMuna);
+        textView.setTypeface(diwanMuna ,  Typeface.BOLD);
+
+        places= (TextView) rootview.findViewById(R.id.location_txt) ;
         loctxt = (TextView) rootview.findViewById(R.id.location_butn);
         loctxt.setTypeface(diwanMuna, Typeface.BOLD);
         menubutn = (Button) rootview.findViewById(R.id.menu_btn);
@@ -99,11 +102,6 @@ public class MainFragment extends Fragment {
 //        });
         return rootview;
     }
-
-
-
-
-
 
 
 }

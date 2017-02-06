@@ -104,7 +104,8 @@ public class FavFragment extends Fragment implements ResponseHandler {
                                                 startActivity(intent);
                                             }}));
 
-                                    }
+                                    }else
+                                        Toast.makeText(getContext() , "There is no favourite" , Toast.LENGTH_LONG).show();
                                 }
                             }
                             // mack sure data != null

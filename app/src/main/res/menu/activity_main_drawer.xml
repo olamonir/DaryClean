@@ -4,15 +4,15 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/main"
-            android:icon="@drawable/main"
+            android:icon="@drawable/home"
             android:title="الرئيسية" />
         <item
             android:id="@+id/nav_profile"
-            android:icon="@drawable/profile"
+            android:icon="@drawable/accountbox"
             android:title="حسابى" />
         <item
             android:id="@+id/nav_fav"
-            android:icon="@drawable/fav"
+            android:icon="@drawable/heart"
             android:title="المفضله" />
         <!--<item-->
             <!--android:id="@+id/nav_lastorder"-->
@@ -20,7 +20,7 @@
             <!--android:title="طلباتى السابقة" />-->
         <item
             android:id="@+id/nav_contact"
-            android:icon="@drawable/contact"
+            android:icon="@drawable/phone_in_talk"
             android:title="تواصل معنا" />
         <item
             android:id="@+id/nav_share"
